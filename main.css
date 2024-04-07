@@ -1,0 +1,299 @@
+/* Navigation Styles */
+nav {
+  background-color: #2e1f01ad; /* Semi-transparent brown background */
+  font-family: Oleo Script; /* Font for navigation */
+  color: #f0d610; /* Text color */
+  display: flex;
+  align-items: left; /* Align items to the left */
+  justify-content: space-between; /* Space between items */
+  padding: 10px 0px;
+  transition: top 0.3s;
+  width: 100%;
+  height: 60px;
+}
+
+.menu-items {
+  list-style-type: none;
+  display: flex;
+}
+
+.menu-items li {
+  margin-right: 15px;
+}
+
+.menu-items li a {
+  color: #f4d40a; /* Link color */
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.menu-items li a:hover {
+  color: #4df04d; /* Link color on hover */
+  background: #e8de5144; /* Semi-transparent background on hover */
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Body Styles */
+body {
+  background: #2c2929; /* Background color */
+  color: #ffffff; /* Text color */
+  height: 100%;
+  margin: 0;
+}
+
+body#bg-img {
+  background: url(/img/background.jpg);
+  background: rgba(68, 68, 68, 0.9), url(/img/background.jpg); /* Background image with overlay */
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* Heading Styles */
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 400;
+}
+
+h1.lg-heading,
+h2.lg-heading,
+h3.lg-heading {
+  font-size: 6rem;
+  font-family: Oleo Script; /* Font for large headings */
+}
+
+h2 {
+  color: rgb(247, 245, 245); /* Heading color */
+  font-size: 30px;
+  font-family: Oleo Script; /* Font for headings */
+}
+
+h3 {
+  color: rgb(247, 245, 245); /* Heading color */
+  font-size: 30px;
+  font-family: Oleo Script; /* Font for headings */
+}
+
+/* Link Styles */
+a {
+  color: #ffffff; /* Link color */
+  text-decoration: none;
+}
+
+/* Secondary Text Styles */
+.text-secondary {
+  color: #fbd811; /* Secondary text color */
+  font-family: Oleo Script; /* Font for secondary text */
+}
+
+/* Main Content Styles */
+main {
+  padding: 4rem;
+  min-height: calc(77.3vh - 60px);
+}
+
+main .icons {
+  margin-top: 1rem;
+}
+
+main .icons a {
+  padding: 0.4rem;
+}
+
+main .icons a:hover {
+  color: #f3c409; /* Icon color on hover */
+  transition: all 0.5s ease-out; /* Transition effect */
+}
+
+main#home {
+  overflow: hidden;
+}
+
+main#home h1 {
+  margin-top: 16vh;
+}
+
+/* About Info Styles */
+.about-info .bio-image {
+  grid-area: bioimage;
+  margin: auto;
+  border-radius: 50%;
+  border: #efcd0a 3px solid; /* Border color and width */
+
+}
+.resume-download {
+  position: absolute;
+  top:27rem; 
+  right: 30rem; 
+}
+.resume-download button {
+  background-color: rgb(66, 54, 4);
+  color: rgb(255, 213, 0);
+  font-family: oleo script;
+  padding: 15px 20px; /* Adjust padding to increase button size */
+  font-size: 18px; /* Adjust font size */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  width: 19.5rem;
+}
+.resume-download button:hover {
+  background-color: rgb(186, 140, 4);
+}
+
+/* Projects Styles */
+.projects {
+  display: grid;
+  grid-gap: 0.7rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.projects img {
+  width: 100%;
+  border: 3px #fff solid; /* Image border */
+}
+
+.projects img:hover {
+  opacity: 0.5; /* Image opacity on hover */
+  border-color: #eece1a; /* Border color on hover */
+}
+
+/* Button Styles */
+.btn,
+.btn-dark,
+.btn-light {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+}
+
+.btn-dark {
+  background: black; /* Dark button background */
+  color: #fff; /* Button text color */
+}
+
+.btn-light {
+  background: #c4c4c4; /* Light button background */
+  color: #333; /* Button text color */
+}
+
+/* Map Container Styles */
+#map-container {
+  position: absolute;
+  top: 58%;
+  right: 5%;
+  margin-top: -25vh; /* Half of the container's height */
+  height: 50vh;
+  width: 50%; /* Adjust width as needed */
+}
+
+#map-container iframe {
+  width: 100%;
+  height: 100%;
+}
+.form {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 30px 30px -30px rgba(27, 26, 26, 0.315);
+}
+
+.form .title {
+  color: rgb(245, 233, 7);
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form input {
+  background-color: #3f3d3d;
+  border-radius: 8px;
+  height: 50px;
+  width: 100%;
+  resize: none;
+  outline: 0;
+  padding: 8px 14px;
+  border: 1px solid rgba(72, 71, 71, 0.145);}
+
+.form textarea {
+  background-color: #3f3d3d;
+  border-radius: 8px;
+  height: 100px;
+  width: 100%;
+  resize: none;
+  outline: 0;
+  padding: 8px 14px;
+  border: 1px solid rgba(72, 71, 71, 0.145);
+  
+}
+
+.form button {
+  align-self: flex-end;
+  padding: 8px;
+  outline: 0;
+  border: 0;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: rgb(255, 217, 0);
+  color: #000000;
+  cursor: pointer;
+}
+.contact-srijal{
+  margin-left: 1rem;
+  font-weight: bold;
+  font-size: 16px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  
+ }
+ #main-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 28px;
+  background: rgba(92, 65, 3, 0.658);
+  font-family: Oleo Script;
+  color: #ffcb3b;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+}
+.icons-footer{
+  display: flex;
+  align-items: center;
+  margin: 29px;
+} 
+.icons-footer a{
+  color: #c7c19d;
+  width: 30px;
+  height: auto;
+  margin-left: 5px;
+  font-size: 9px;
+}
+.copyright{
+  font-weight: 300;
+  margin-left: 650px;
+  font-style: bold;
+}
+
+    
